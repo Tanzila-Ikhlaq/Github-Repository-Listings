@@ -1,0 +1,131 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: #fff; 
+    
+}
+
+.container {
+    display: grid;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #07161b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: #fff;
+    text-align: center;
+}
+
+nav.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #07161b;
+    padding: 10px 0;
+    text-align: center;
+}
+
+label {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+form.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input.form-control {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e1e4e8; 
+    margin-bottom: 10px;
+}
+
+.repositories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+}
+
+.repo {
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.card {
+    border: 1px solid #e1e4e8; 
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card-body {
+    padding: 10px;
+    background-color: #3d737f;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff; 
+}
+
+.card-text {
+    margin-bottom: 12px;
+    color: #fff; 
+}
+
+.repositories a {
+    color: black; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.repositories a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 768px) {
+    input.form-control {
+        width: 100%;
+        margin-right: 10px; 
+        margin-bottom: 10px; 
+    }
+
+    form.d-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .repositories {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
